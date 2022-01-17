@@ -1,0 +1,32 @@
+<div
+  style="text-align: center; height: 100vh"
+  [style.background]="isStarted ? (isWin ? 'green' : 'red') : ''"
+>
+  <div style="display: flex; justify-content: space-between">
+    <div class="div1">{{ player1 }}</div>
+    <div class="div2">{{ player2 }}</div>
+  </div>
+  <div style="text-align: right">
+    <button (click)="generateRandom(0)">Rock</button>
+    <button (click)="generateRandom(1)">Paper</button>
+    <button (click)="generateRandom(2)">Scissors</button>
+  </div>
+  <hr />
+  <h3>Scores</h3>
+  <table>
+    <tr>
+      <th>Computer</th>
+      <th>You</th>
+    </tr>
+    <tr></tr>
+    <tr>
+      <td>{{ score1 }}</td>
+      <td>{{ score2 }}</td>
+    </tr>
+  </table>
+  <button (click)="finalize()" class="button2">Finalize</button>
+
+  <h1>
+    <em>{{ statement }}</em>
+  </h1>
+</div>

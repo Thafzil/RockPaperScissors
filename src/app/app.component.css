@@ -1,0 +1,53 @@
+p {
+  font-family: Lato;
+}
+
+.div1 {
+  width: 40%;
+  height: 150px;
+  background: linear-gradient(white, orange);
+  /* float: left; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div2 {
+  width: 40%;
+  height: 150px;
+  background: linear-gradient(white, blue);
+  /* float: right; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1 {
+  color: blue;
+  background-color: limegreen;
+  margin-left: 5%;
+  margin-top: 150px;
+}
+
+.button2 {
+  color: blue;
+  background-color: limegreen;
+  /* margin-top: 150px; */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
